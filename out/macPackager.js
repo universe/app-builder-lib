@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const bluebird_lst_1 = require("bluebird-lst");
+
+require('graceful-fs').gracefulify(require('fs'));
+
 const builder_util_1 = require("builder-util");
 const osx_sign_1 = require("@electron/osx-sign");
 const promises_1 = require("fs/promises");
